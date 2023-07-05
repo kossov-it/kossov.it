@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff url("clouds-bg.jpg") no-repeat center/100% 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: MyriadVariableConcept-Roman;
+    src: url(MyriadVariableConcept-Roman.otf);
+}
+  
+.float-area{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animate 3s ease-in-out infinite;
+}
+
+.floating-logo{
+    width: 500px;
+    height: 500px;
+}
+
+
+@keyframes animate {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
