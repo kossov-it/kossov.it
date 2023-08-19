@@ -39,7 +39,7 @@ Background.headparticle = function() {
    var p_geom = new THREE.Geometry();
    var p_material = new THREE.ParticleBasicMaterial({
       // color: 0xD6D9E1,
-      color: 0xFFFFFF,
+      color: 0x2ba9d3,
       size: 1.9
    });
 
@@ -71,7 +71,7 @@ Background.headparticle = function() {
 
    Background.renderer = new THREE.WebGLRenderer({ alpha: true });
    Background.renderer.setSize( site.Width, site.Height );
-   Background.renderer.setClearColor(0x000000, 0);
+   Background.renderer.setClearColor(0xFFFFFF);
 
    $('.particlehead').append(Background.renderer.domElement);
    $('.particlehead').on('mousemove', onDocumentMouseMove);
@@ -89,8 +89,8 @@ Background.headparticle = function() {
    }
 
    function onDocumentMouseMove( event ) {
-      mouseX = ( event.clientX - windowHalfX ) / 2;
-      mouseY = ( event.clientY - windowHalfY ) / 2;
+      mouseX = ( windowHalfX - event.clientX ) / 2;
+      mouseY = ( windowHalfY- event.clientY ) / 2;
    }
 
    Background.animate = function() { 

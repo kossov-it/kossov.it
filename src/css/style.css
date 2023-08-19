@@ -4,7 +4,7 @@ body {
   color: #818181;
   font-weight: 300;
   font-size: 15px;
-  background: #EEEEEE; }
+  background: #ffffff; }
   body:before {
     -webkit-transition: .3s all ease-in-out;
     -o-transition: .3s all ease-in-out;
@@ -536,7 +536,7 @@ h1, h2, h3, h4, h5,
   background-repeat: no-repeat;
   background-position: top;
   background-position: center center;
-  background: #eeeeee; }
+  background: #ffffff; }
   .site-blocks-cover.overlay {
     position: relative; }
     .site-blocks-cover.overlay:before {
