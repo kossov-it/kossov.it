@@ -45,7 +45,7 @@ Background.headparticle = function() {
 
    // model
    var loader = new THREE.OBJLoader( manager );
-   loader.load( 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/40480/head.obj', function ( object ) {
+   loader.load( 'src/images/head.obj', function ( object ) {
 
       object.traverse( function ( child ) {
 
