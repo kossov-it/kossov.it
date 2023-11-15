@@ -1698,3 +1698,15 @@ top:10%; }
       transform: translateY(-15px);
     }
   }
+
+.logo-svg {
+  height: 5rem;
+}
+  @media (max-width: 600px) {
+
+
+    .arrow {
+      bottom: 0px;
+    }
+}
+
